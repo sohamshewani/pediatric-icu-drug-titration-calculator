@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pediatric-icu-drug-titration-calculator"
+version = "0.1.0"
+description = "A pediatric ICU drug titration calculator in Python."
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+requires-python = ">=3.7"
+
+[project.urls]
+Documentation = "https://github.com/alibaba/pediatric-icu-drug-titration-calculator"
+Source = "https://github.com/alibaba/pediatric-icu-drug-titration-calculator"
+Bug Reports = "https://github.com/alibaba/pediatric-icu-drug-titration-calculator/issues"
+
+[tool.black]
+line-length = 88
+
+[tool.pytest.ini_options]
+addopts = "-v"

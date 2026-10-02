@@ -1,0 +1,13 @@
+if __name__ == '__main__':
+    from src.api.rest_api import run_api
+    from src.api.cli import run_cli
+
+    # Choose the entry point to run based on the environment variable or default to the REST API
+    entry_point = os.getenv('API_TYPE', 'rest')
+
+    if entry_point == 'rest':
+        run_api()
+    elif entry_point == 'cli':
+        run_cli()
+    else:
+        raise ValueError(f'Invalid API type: {entry_point}. Expected either 
